@@ -20,9 +20,9 @@ const SearchBox = ({beers, setBeers,handleSearch}) => {
 
   return (
     
-    <form className="search-box">
-      <label htmlFor={"search"} className="search-box__label">search</label>
-      <input type="text" name={"search"} onInput={handleSearch} className="search-box__input"/>
+    <form className="searchBox">
+      <label htmlFor={"search"} className="searchBox__label">search</label>
+      <input className="SearchBox__input-box"  type="text" name={"search"} onInput={handleSearch} />
     </form>
   
   )

@@ -8,7 +8,7 @@ const NavBar = ({beers, setBeers, handleSearch}) => {
 
 
   return (
-    <header>
+    <header className="navBar">
       <SearchBox handleSearch = {handleSearch}/>
       <FiltersList />
       
