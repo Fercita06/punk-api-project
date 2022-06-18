@@ -7,7 +7,7 @@ const Main = (props) => {
 
   return (
     <div>
-      < CardList beers = {beers} />
+      <CardList beers={beers} />
       
     </div>
   )

@@ -7,7 +7,7 @@ const CardList = (props) => {
 
 
   const createCards = beers.map((beer) => {
-    return <Card  url={beer.image_url} name={beer.name} tagline={beer.tagline} id={beer.id} />
+  return <Card key={beer.id} beer={beer} />
 }
 
 )
