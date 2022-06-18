@@ -1,7 +1,7 @@
 .beer-card{
   width:320px;
   height: 540px;
-  border: 1px solid black;
+  border-radius:10px;
   overflow: hidden;
 
   &__img{
@@ -12,27 +12,47 @@
       background-size: contain;
       position: relative;
       color:#fff;
-        .beer-card-name{
-          position: absolute;
-          top:0;
-          width: 100%;
-          text-align: center;
+  }
 
-        }
 
-        .beer-card-tagline{
-          position:absolute;
-          bottom:0;
-          text-align: center;
-          width: 100%;
-        }
+  &__info{
+    padding:15px;
+    .info__description{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
+  }
 }
+
+
 
 .bg-color{
   padding: 30px 40px 80px 40px;
   position: relative;
   width: 100%;
+  color: #fff;
+  height: 420px;
+  .beer-card-name{
+    position: absolute;
+    top: 0;
+    text-align: center;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    padding: 14px 20px;
+
+  }
+  .beer-card-tagline{
+    position: absolute;
+    bottom: 14px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+
     &--yellow{
       background-color: #f8cB00;
     }
@@ -40,4 +60,27 @@
       background-color: #EF3740;
     }
 
+}
+
+.info__container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top:20px;
+
+  .container__alcohol{
+      border-radius: 10px;
+      border: 2px solid #000;
+      padding: 9px 12px;
+  }
+  .container__button{
+      border: none;
+      background-color: #000;
+      color: #fff;
+      border-radius: 5px;
+      padding: 9px 12px;
+      font-weight: bold;
+      cursor: pointer;
+
+  }
 }
