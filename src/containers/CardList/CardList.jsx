@@ -14,7 +14,7 @@ const CardList = (props) => {
   
 
   return (
-    <div className="card-container">
+    <div className="card-beer-container">
       {createCards}
 
     </div>

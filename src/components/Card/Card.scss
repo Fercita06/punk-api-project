@@ -2,6 +2,7 @@
   width:320px;
   height: 540px;
   border: 1px solid black;
+  overflow: hidden;
 
   &__img{
       height: 340px;
@@ -10,6 +11,7 @@
       background-repeat: no-repeat;
       background-size: contain;
       position: relative;
+      color:#fff;
         .beer-card-name{
           position: absolute;
           top:0;
@@ -23,12 +25,19 @@
           bottom:0;
           text-align: center;
           width: 100%;
-
-
         }
-  }
+    }
+}
 
-
-
+.bg-color{
+  padding: 30px 40px 80px 40px;
+  position: relative;
+  width: 100%;
+    &--yellow{
+      background-color: #f8cB00;
+    }
+    &--red{
+      background-color: #EF3740;
+    }
 
 }

@@ -7,9 +7,12 @@ const Card = ({beer}) => {
 
   return (
     <article className="beer-card">
-      <div className="beer-card__img"style={{backgroundImage: `url(${image_url})`}}>
-        <h2 className="beer-card__beer-name">{name}</h2>
-        <h3 className="beer-card__beer-tagline">{tagline}</h3>
+      <div className={id%2===0?"bg-color--yellow":"bg-color--red"}>
+      
+        <div className="beer-card__img"style={{backgroundImage: `url(${image_url})`}}>
+         <h2 className="beer-card-name">{name}</h2>
+         <h3 className="beer-card-tagline">{tagline}</h3>
+        </div>
       </div>
       <div className="beer-card__info">
         <p className="beer-card__info-description">{description}</p>
