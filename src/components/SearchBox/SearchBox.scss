@@ -1,9 +1,12 @@
-.searchBox{
- color:red;
- border-radius: 10px;
+
+
+.SearchBox{
+  
+&__input-box{
+  background-color: lightgrey;
+  border-radius: 10px;
+  color:black;
+  font-weight: bold;
   
 }
-
-.SearchBox__input-box{
-  background-color: lightgrey;
 }
