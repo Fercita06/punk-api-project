@@ -29,10 +29,41 @@ const App = () => {
     
 }
     
+  const filteredByAbv = (event) => {
+    //const filterAbv = event.target.checked;
+    if (event.target.checked === true) {
+      setUrl(`https://api.punkapi.com/v2/beers?abv_gt=6`)
+    }else if (event.target.checked === false) {
+      setUrl ("https://api.punkapi.com/v2/beers")
+    }
+  }
+
+  const filteredByClassicRange = (event) => {
+    //const filterClassicBeer = event.target.checked;
+    if (event.target.checked === true) {
+      setUrl(`https://api.punkapi.com/v2/beers?brewed_before=01-2010`)
+    }else if (event.target.checked === false) {
+      setUrl ("https://api.punkapi.com/v2/beers")
+    }
+  }
+
+  const filteredByAcidicLevel = (event) => {
+   // const filterAcidicLevel = event.target.checked;
+   // console.log(filterAcidicLevel);
+   // console.log("filterAcidicLevel");
+    if (event.target.checked === true) {
+      setUrl(`https://api.punkapi.com/v2/beers?ibu_lt=4`)
+    }else if (event.target.checked === false) {
+      setUrl ("https://api.punkapi.com/v2/beers")
+    }
+  }
+
+
+  
 
   return (
     <div className="App">
-      <NavBar beers={beers} setBeers={setBeers} handleSearch= {handleSearch}/>
+      <NavBar beers={beers} setBeers={setBeers} handleSearch= {handleSearch} filteredByAbv={filteredByAbv} filteredByClassicRange= {filteredByClassicRange} filteredByAcidicLevel={filteredByAcidicLevel} />
       <Main beers={beers} />
 
       

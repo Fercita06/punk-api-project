@@ -4,13 +4,13 @@ import SearchBox from "../SearchBox/SearchBox"
 
 
 
-const NavBar = ({beers, setBeers, handleSearch}) => {
+const NavBar = ({beers, setBeers, handleSearch, filteredByAbv, filteredByAcidicLevel, filteredByClassicRange}) => {
 
 
   return (
     <header className="navBar">
       <SearchBox handleSearch = {handleSearch}/>
-      <FiltersList />
+      <FiltersList filteredByAbv={filteredByAbv} filteredByClassicRange= {filteredByClassicRange} filteredByAcidicLevel={filteredByAcidicLevel}/>
       
 
 
