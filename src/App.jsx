@@ -1,6 +1,7 @@
-import React, {useState, useEffect} from 'react'
-import NavBar from "./components/NavBar/NavBar"
-import Main from "./components/Main/Main"
+import React, {useState, useEffect} from 'react';
+import NavBar from "./components/NavBar/NavBar";
+import Main from "./components/Main/Main";
+import "./App.scss";
 
 const App = () => {
   const [beers, setBeers] = useState([]);
@@ -63,6 +64,7 @@ const App = () => {
 
   return (
     <div className="App">
+       
       <NavBar beers={beers} setBeers={setBeers} handleSearch= {handleSearch} filteredByAbv={filteredByAbv} filteredByClassicRange= {filteredByClassicRange} filteredByAcidicLevel={filteredByAcidicLevel} />
       <Main beers={beers} />
 

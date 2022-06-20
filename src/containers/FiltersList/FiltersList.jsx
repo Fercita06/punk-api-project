@@ -1,5 +1,6 @@
 import React from 'react'
 import FilterItem from '../../components/FilterItem/FilterItem'
+import "./FiltersList.scss"
 
 const FiltersList = ({filteredByAbv, filteredByAcidicLevel, filteredByClassicRange}) => {
   return (

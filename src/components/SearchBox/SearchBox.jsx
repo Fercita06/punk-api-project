@@ -1,4 +1,5 @@
 //import React, {useState} from 'react'
+import "./SearchBox.scss";
 
 
 
@@ -21,8 +22,8 @@ const SearchBox = ({beers, setBeers,handleSearch}) => {
   return (
     
     <form className="searchBox">
-      <label htmlFor={"search"} className="searchBox__label">search</label>
-      <input className="SearchBox__input-box"  type="text" name={"search"} onInput={handleSearch} />
+      <label htmlFor={"search"} className="searchBox__label"></label>
+      <input className="SearchBox__input-box" placeholder="Search beers by name" type="text" name={"search"} onInput={handleSearch} />
     </form>
   
   )
