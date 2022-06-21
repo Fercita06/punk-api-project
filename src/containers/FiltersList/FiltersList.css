@@ -1,0 +1,10 @@
+.filterBoxes {
+  display: flex;
+  justify-content: space-between;
+}
+.filterBoxes label {
+  padding-left: 5px;
+}
+.filterBoxes input {
+  padding-bottom: 15px;
+}/*# sourceMappingURL=FiltersList.css.map */
