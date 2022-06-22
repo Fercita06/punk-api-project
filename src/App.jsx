@@ -5,7 +5,7 @@ import "./App.scss";
 
 const App = () => {
   const [beers, setBeers] = useState([]);
-  const[url, setUrl]=useState("https://api.punkapi.com/v2/beers")
+  const[url, setUrl]=useState("https://api.punkapi.com/v2/beers?page=2&per_page=80")
 
   useEffect(() => {
     getBeers()
@@ -35,7 +35,7 @@ const App = () => {
     if (event.target.checked === true) {
       setUrl(`https://api.punkapi.com/v2/beers?abv_gt=6`)
     }else if (event.target.checked === false) {
-      setUrl ("https://api.punkapi.com/v2/beers")
+      setUrl ("https://api.punkapi.com/v2/beers?page=2&per_page=80")
     }
   }
 
@@ -44,7 +44,7 @@ const App = () => {
     if (event.target.checked === true) {
       setUrl(`https://api.punkapi.com/v2/beers?brewed_before=01-2010`)
     }else if (event.target.checked === false) {
-      setUrl ("https://api.punkapi.com/v2/beers")
+      setUrl ("https://api.punkapi.com/v2/beers?page=2&per_page=80")
     }
   }
 
@@ -55,7 +55,7 @@ const App = () => {
     if (event.target.checked === true) {
       setUrl(`https://api.punkapi.com/v2/beers?ibu_lt=4`)
     }else if (event.target.checked === false) {
-      setUrl ("https://api.punkapi.com/v2/beers")
+      setUrl ("https://api.punkapi.com/v2/beers?page=2&per_page=80")
     }
   }
 
